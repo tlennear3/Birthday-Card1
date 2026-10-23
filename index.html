@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Happy Birthday</title>
+
+        <style>
+            body {
+                background: linear-gradient(pink, lavender);
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                padding: 50px 15px;
+                min-height: 100vh;
+                box-sizing: border-box;
+            }
+
+            h1 {
+                color: purple;
+                
+            }
+
+            .card {
+                background: white;
+                max-width: 400px;
+                margin: 30px auto;
+                padding: 30px 20px;
+                border-radius: 20px;
+                box-shadow: 0 5px 15px #00000030;
+                overflow-wrap: break-word;
+            }
+
+            .balloons {
+                font-size: 50px;
+                
+
+            }
+
+            button {
+                background-color: purple;
+                color: white;
+                padding: 15px 25px;
+                border: none;
+                border-radius: 10px;
+                font-size: 18px;
+                cursor: pointer;
+                max-width: 100%;
+            }
+
+            button:hover {
+                background-color: darkmagenta;
+            }
+
+            #message {
+                display: none;
+                margin-top: 25px;
+                color: purple;
+                animation: appear 1s ease;
+            }
+
+            @keyframes appear {
+                from {
+                    opacity: 0;
+                    transform: translateY(15px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            </style>
+    </head>
+
+    <body>
+        <h1>😎🎈Happy Birthday Weirdo🐣🎂</h1>
+    <div class="card">
+        <div class ="balloons">🎈 🎂</div>
+
+        <h2>Damn, you getting old!!</h2>
+
+        <button onclick="openCard()">
+            Click Here maam, follow instructions for once
+        </button>
+
+        <div id="message">
+            <h2>Drink for me this weekend 🍻 🍾 🥂</h2>
+            <p>Enjoy your Birthday</p>
+        </div>
+    </div>
+
+        <script>
+            function openCard() {
+                document.getElementById("message").style.display = "block";
+            }
+            </script>
+    </body>
+</html>
